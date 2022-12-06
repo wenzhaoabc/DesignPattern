@@ -16,6 +16,18 @@
     <Filter Include="explain_intercept">
       <UniqueIdentifier>{7858f819-29a7-492e-bd82-88fc4dc10f1a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="observer_pattern">
+      <UniqueIdentifier>{f266de92-87c3-477a-8a2d-76970f5f9e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="state_pattern">
+      <UniqueIdentifier>{95387a7b-f50b-4fd0-823a-e2c43bdcfed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lazy_loading_pattern">
+      <UniqueIdentifier>{39ac2712-9968-4e0f-aa01-22d1121a4457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="visitor_pattern">
+      <UniqueIdentifier>{5a382ce3-0844-45e9-be79-1ab12d8bfaa6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="explain.cpp">
