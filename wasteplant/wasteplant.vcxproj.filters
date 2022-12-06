@@ -29,5 +29,11 @@
     <ClInclude Include="factory.h">
       <Filter>zst</Filter>
     </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Garbage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
