@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="explain_intercept">
-      <UniqueIdentifier>{7858f819-29a7-492e-bd82-88fc4dc10f1a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="observer_pattern">
       <UniqueIdentifier>{f266de92-87c3-477a-8a2d-76970f5f9e98}</UniqueIdentifier>
     </Filter>
@@ -30,25 +27,43 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="explain.cpp">
-      <Filter>explain_intercept</Filter>
+    <ClCompile Include="WasteScreening.cpp">
+      <Filter>visitor_pattern</Filter>
     </ClCompile>
-    <ClCompile Include="intercept.cpp">
-      <Filter>explain_intercept</Filter>
+    <ClCompile Include="Visitor.cpp">
+      <Filter>visitor_pattern</Filter>
     </ClCompile>
-    <ClCompile Include="iterator.cpp">
-      <Filter>explain_intercept</Filter>
+    <ClCompile Include="WorkingSchedule.cpp">
+      <Filter>observer_pattern</Filter>
     </ClCompile>
-    <ClCompile Include="mediator.cpp">
-      <Filter>explain_intercept</Filter>
+    <ClCompile Include="Stuff.cpp">
+      <Filter>observer_pattern</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>explain_intercept</Filter>
+    <ClCompile Include="StuffState.cpp">
+      <Filter>state_pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="lmq.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h">
-      <Filter>explain_intercept</Filter>
+    <ClInclude Include="WasteScreening.h">
+      <Filter>visitor_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Visitor.h">
+      <Filter>visitor_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkingSchedule.h">
+      <Filter>observer_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="lmq.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Stuff.h">
+      <Filter>observer_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="StuffState.h">
+      <Filter>state_pattern</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

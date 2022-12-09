@@ -127,14 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="explain.cpp" />
-    <ClCompile Include="intercept.cpp" />
-    <ClCompile Include="iterator.cpp" />
-    <ClCompile Include="mediator.cpp" />
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="lmq.cpp" />
+    <ClCompile Include="Stuff.cpp" />
+    <ClCompile Include="StuffState.cpp" />
+    <ClCompile Include="Visitor.cpp" />
+    <ClCompile Include="WasteScreening.cpp" />
+    <ClCompile Include="WorkingSchedule.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h" />
+    <ClInclude Include="lmq.h" />
+    <ClInclude Include="Stuff.h" />
+    <ClInclude Include="StuffState.h" />
+    <ClInclude Include="Visitor.h" />
+    <ClInclude Include="WasteScreening.h" />
+    <ClInclude Include="WorkingSchedule.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
