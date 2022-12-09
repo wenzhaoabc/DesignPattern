@@ -16,12 +16,30 @@
     <Filter Include="zst">
       <UniqueIdentifier>{f431cac1-4be0-4e2a-be4f-f15b72da2fbe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="lyr">
+      <UniqueIdentifier>{7e736f35-10c6-4322-91d5-44c34db7d6bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lyr\Proxy">
+      <UniqueIdentifier>{c8f9db52-4cbe-4d54-a68a-cc9649f0c034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lyr\Command">
+      <UniqueIdentifier>{8247c3a4-ca80-440e-a595-0cf830abe10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lyr\ChainOfResponsibility">
+      <UniqueIdentifier>{a7b569ca-d794-478a-9423-470a434eb5bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lyr\FrontControllr">
+      <UniqueIdentifier>{7253a892-1de2-4239-bd77-7b20f472b016}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="factory.cpp">
       <Filter>zst</Filter>
     </ClCompile>
     <ClCompile Include="zstmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lyrmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
