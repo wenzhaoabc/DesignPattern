@@ -105,49 +105,49 @@ public:
 
 class AbstractFactory {
 public:
-    virtual DryPipeLine *CreateDryPipeLine() const = 0;
+    virtual DryPipeLine* CreateDryPipeLine() const = 0;
 
-    virtual WetPipeLine *CreateWetPipeLine() const = 0;
+    virtual WetPipeLine* CreateWetPipeLine() const = 0;
 
-    virtual RecPipeLine *CreateRecPipeLine() const = 0;
+    virtual RecPipeLine* CreateRecPipeLine() const = 0;
 
-    virtual HarPipeLine *CreateHarPipeLine() const = 0;
+    virtual HarPipeLine* CreateHarPipeLine() const = 0;
 };
 
 class ConcreteProProcess : public AbstractFactory {
 public:
-    DryPipeLine *CreateDryPipeLine() const override {
+    DryPipeLine* CreateDryPipeLine() const override {
         return new DryPreProcess();
     }
 
-    WetPipeLine *CreateWetPipeLine() const override {
+    WetPipeLine* CreateWetPipeLine() const override {
         return new WetPreProcess();
     }
 
-    RecPipeLine *CreateRecPipeLine() const override {
+    RecPipeLine* CreateRecPipeLine() const override {
         return new RecProProcess();
     }
 
-    HarPipeLine *CreateHarPipeLine() const override {
+    HarPipeLine* CreateHarPipeLine() const override {
         return new HarProcess();
     }
 };
 
 class ConcretePackage : public AbstractFactory {
 public:
-    DryPipeLine *CreateDryPipeLine() const override {
+    DryPipeLine* CreateDryPipeLine() const override {
         return new DryPackage();
     }
 
-    WetPipeLine *CreateWetPipeLine() const override {
+    WetPipeLine* CreateWetPipeLine() const override {
         return new WetPackage();
     }
 
-    RecPipeLine *CreateRecPipeLine() const override {
+    RecPipeLine* CreateRecPipeLine() const override {
         return new RecPackage();
     }
 
-    HarPipeLine *CreateHarPipeLine() const override {
+    HarPipeLine* CreateHarPipeLine() const override {
         return new HarPackage();
     }
 };

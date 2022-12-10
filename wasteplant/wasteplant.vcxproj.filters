@@ -18,22 +18,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="factory.cpp">
-      <Filter>zst</Filter>
-    </ClCompile>
     <ClCompile Include="zstmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="factory.h">
-      <Filter>zst</Filter>
-    </ClInclude>
     <ClInclude Include="Person.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Garbage.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory.h">
+      <Filter>zst</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
+      <Filter>zst</Filter>
+    </ClInclude>
+    <ClInclude Include="GarbageType.h">
+      <Filter>zst</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>zst</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>zst</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
