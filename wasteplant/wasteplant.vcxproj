@@ -130,9 +130,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\Adapter.cpp" />
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\BuilderPattern.cpp" />
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\BusinessService.cpp" />
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\cgrmain.cpp" />
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\Prototype.cpp" />
     <ClCompile Include="zstmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\Adapter.h" />
+    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\BuilderPattern.h" />
+    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\BusinessService.h" />
+    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\Prototype.h" />
     <ClInclude Include="AbstractFactory.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Garbage.h" />

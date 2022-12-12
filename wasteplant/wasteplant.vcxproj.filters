@@ -16,10 +16,28 @@
     <Filter Include="zst">
       <UniqueIdentifier>{f431cac1-4be0-4e2a-be4f-f15b72da2fbe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cgr">
+      <UniqueIdentifier>{0b1211b1-863a-403d-bac4-8b1932447f00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="zstmain.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\Adapter.cpp">
+      <Filter>cgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\BuilderPattern.cpp">
+      <Filter>cgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\BusinessService.cpp">
+      <Filter>cgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\cgrmain.cpp">
+      <Filter>cgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\Prototype.cpp">
+      <Filter>cgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +61,18 @@
     </ClInclude>
     <ClInclude Include="ThreadPool.h">
       <Filter>zst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\Adapter.h">
+      <Filter>cgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\BuilderPattern.h">
+      <Filter>cgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\BusinessService.h">
+      <Filter>cgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\Prototype.h">
+      <Filter>cgr</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
