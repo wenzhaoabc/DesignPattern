@@ -130,19 +130,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\Adapter.cpp" />
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\BuilderPattern.cpp" />
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\BusinessService.cpp" />
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\cgrmain.cpp" />
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\Prototype.cpp" />
+    <ClCompile Include="cgr\Adapter.cpp" />
+    <ClCompile Include="cgr\BuilderPattern.cpp" />
+    <ClCompile Include="cgr\BusinessService.cpp" />
+    <ClCompile Include="cgr\cgrmain.cpp" />
+    <ClCompile Include="cgr\Prototype.cpp" />
     <ClCompile Include="zstmain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\Adapter.h" />
-    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\BuilderPattern.h" />
-    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\BusinessService.h" />
-    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\Prototype.h" />
     <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="cgr\Adapter.h" />
+    <ClInclude Include="cgr\BuilderPattern.h" />
+    <ClInclude Include="cgr\BusinessService.h" />
+    <ClInclude Include="cgr\Prototype.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Garbage.h" />
     <ClInclude Include="GarbageType.h" />

@@ -24,19 +24,19 @@
     <ClCompile Include="zstmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\Adapter.cpp">
+    <ClCompile Include="cgr\Adapter.cpp">
       <Filter>cgr</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\BuilderPattern.cpp">
+    <ClCompile Include="cgr\BuilderPattern.cpp">
       <Filter>cgr</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\BusinessService.cpp">
+    <ClCompile Include="cgr\BusinessService.cpp">
       <Filter>cgr</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\cgrmain.cpp">
+    <ClCompile Include="cgr\cgrmain.cpp">
       <Filter>cgr</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\软件设计模式\软件设计模式\Prototype.cpp">
+    <ClCompile Include="cgr\Prototype.cpp">
       <Filter>cgr</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,16 +62,16 @@
     <ClInclude Include="ThreadPool.h">
       <Filter>zst</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\Adapter.h">
+    <ClInclude Include="cgr\Adapter.h">
       <Filter>cgr</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\BuilderPattern.h">
+    <ClInclude Include="cgr\BuilderPattern.h">
       <Filter>cgr</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\BusinessService.h">
+    <ClInclude Include="cgr\BusinessService.h">
       <Filter>cgr</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\软件设计模式\软件设计模式\Prototype.h">
+    <ClInclude Include="cgr\Prototype.h">
       <Filter>cgr</Filter>
     </ClInclude>
   </ItemGroup>
