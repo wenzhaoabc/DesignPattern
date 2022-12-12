@@ -16,6 +16,18 @@
     <Filter Include="zst">
       <UniqueIdentifier>{f431cac1-4be0-4e2a-be4f-f15b72da2fbe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="EmptyObjectPattern">
+      <UniqueIdentifier>{e7b25597-ba7a-4a36-9391-ca2d3f17fe8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StrategicPattern">
+      <UniqueIdentifier>{71c707f9-1b58-4af5-bf51-2fca323e291c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TemplatePattern">
+      <UniqueIdentifier>{4bf71d84-1e15-419f-bf51-3fb5e595efc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TransferObjectPattern">
+      <UniqueIdentifier>{444a5b86-8362-48c9-aa08-3ed54b83dd48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="factory.cpp">
@@ -23,6 +35,18 @@
     </ClCompile>
     <ClCompile Include="zstmain.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EmptyObjectPattern.cpp">
+      <Filter>EmptyObjectPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="StrategicPattern.cpp">
+      <Filter>StrategicPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplatePattern.cpp">
+      <Filter>TemplatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="TransferObjectPattern.cpp">
+      <Filter>TransferObjectPattern</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +58,18 @@
     </ClInclude>
     <ClInclude Include="Garbage.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EmptyObjectPattern.h">
+      <Filter>EmptyObjectPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="StrategicPattern.h">
+      <Filter>StrategicPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplatePattern.h">
+      <Filter>TemplatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="TransferObjectPattern.h">
+      <Filter>TransferObjectPattern</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

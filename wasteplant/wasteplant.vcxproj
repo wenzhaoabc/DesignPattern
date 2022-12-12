@@ -127,13 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EmptyObjectPattern.cpp" />
     <ClCompile Include="factory.cpp" />
+    <ClCompile Include="StrategicPattern.cpp" />
+    <ClCompile Include="TemplatePattern.cpp" />
+    <ClCompile Include="TransferObjectPattern.cpp" />
     <ClCompile Include="zstmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EmptyObjectPattern.h" />
     <ClInclude Include="factory.h" />
     <ClInclude Include="Garbage.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="StrategicPattern.h" />
+    <ClInclude Include="TemplatePattern.h" />
+    <ClInclude Include="TransferObjectPattern.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
