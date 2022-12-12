@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ChoiceManager.cpp" />
+    <ClCompile Include="ChoiceTrash.cpp" />
     <ClCompile Include="lmq.cpp" />
+    <ClCompile Include="MyChoice.cpp" />
     <ClCompile Include="Stuff.cpp" />
     <ClCompile Include="StuffState.cpp" />
     <ClCompile Include="Visitor.cpp" />
@@ -135,7 +138,10 @@
     <ClCompile Include="WorkingSchedule.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChoiceManager.h" />
+    <ClInclude Include="ChoiceTrash.h" />
     <ClInclude Include="lmq.h" />
+    <ClInclude Include="MyChoice.h" />
     <ClInclude Include="Stuff.h" />
     <ClInclude Include="StuffState.h" />
     <ClInclude Include="Visitor.h" />

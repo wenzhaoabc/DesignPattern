@@ -1,4 +1,5 @@
 #include<iostream>
+#include<list>
 #include "lmq.h"
 using namespace std;
 
@@ -37,6 +38,44 @@ void setStuffsState(OnDuty& on, OffDuty& off)
 	else cout << "error: interface off state hasn't been inited!" << endl;
 }
 
+void choose()
+{
+	MyChoice* mychoice = new MyChoice();
+	ChoiceManager* choice_manager = new ChoiceManager();
+	int choice;
+	int num = 0;
+	while (1)
+	{
+		cout << std::string("please input an interger: Æ»¹ûºËÊÇ¸ÉÀ¬»ø»¹ÊÇÊªÀ¬»ø£¿") << endl;
+		cout << "1. ¸ÉÀ¬»ø   2. ÊªÀ¬»ø  3. ÖÕÖ¹×÷´ð" << endl;
+		cout << "your choice: ";
+		cin >> choice;
+		switch (choice)
+		{
+		case 1:
+			mychoice->setChoice("¸ÉÀ¬»ø");
+			choice_manager->add("¸ÉÀ¬»ø");
+			num++;
+			break;
+		case 2:
+			mychoice->setChoice("ÊªÀ¬»ø");
+			choice_manager->add("ÊªÀ¬»ø");
+			num++;
+			break;
+		case 3:
+			for (int i = 0; i < num; i++)
+			{
+				mychoice->getChoiceFromChoiceTrash(choice_manager->get(num - i ));
+				cout << "choice " << num - i << ' ' << mychoice->getChoice() << endl;
+			}
+			return;
+		default:
+			cout << "wrong interger!" << endl;
+
+		}
+	}
+}
+
 int main()
 {
 	while (1)
@@ -46,6 +85,7 @@ int main()
 		cout << "1. WasteScreening, designed by visitor pattern" << endl;
 		cout << "2. NotifySchudule designed by observer pattern" << endl;
 		cout << "3. ModifyStuffState designed by state pattern" << endl;
+		cout << "4. ThrowRubbishIntoTrash designed by memento pattern" << endl;
 		cout << "0. quit" << endl;
 		cin >> choice;
 		switch (choice)
@@ -68,6 +108,10 @@ int main()
 			static OffDuty offDutyState;
 			setStuffsState(onDutyState, offDutyState);
 			cout << endl;
+			break;
+		}
+		case 4: {
+			choose();
 			break;
 		}
 		case 0: {
