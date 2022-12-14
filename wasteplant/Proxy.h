@@ -3,35 +3,37 @@
 #include <string>
 using namespace std;
 //Subject
-class Person
+class Client
 {
 public:
-    virtual void rentHouse() = 0;
+    virtual void  disposeGarbage() = 0;
 };
 
 
 //RealSubject
-class XiaoM :public Person
+class FactoryClient :public Client
 {
 public:
-    void rentHouse()
+    void disposeGarbage()
     {
-        cout << "小明需要租一间房子！" << endl;
+        cout << "一家工厂想请垃圾处理站为他们处理垃圾" << endl;
+        cout << "向代理服务点提出委托申请" << endl;
+        cout << endl;
     }
 };
 
 //Proxy
-class Intermediary :public Person
+class Intermediary :public Client
 {
 public:
-    Intermediary(Person* person) :m_Person(person) {}
-    void rentHouse()
+    Intermediary(Client* client) :m_Client(client) {}
+    void disposeGarbage()
     {
-        m_Person->rentHouse();
-        cout << "中介抽取佣金百分之10！" << endl;
+        m_Client->disposeGarbage();
+        cout << "代理服务点将申请提交给垃圾处理中心" << endl;
     }
 private:
-    Person* m_Person;
+    Client* m_Client;
 };
 
 

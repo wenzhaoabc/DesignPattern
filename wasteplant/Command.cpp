@@ -16,10 +16,10 @@ void CommandPatternDemo()
 	cout << endl;
 	// 命令组合
 	Painter* xjm = new Painter();  // 命令执行对象
-	Command* circle_cmd_1 = new CircleCommand(xjm);     // 画圆1
-	Command* line_cmd_1 = new LineCommand(xjm);         // 画直线1
-	Command* triangle_cmd_1 = new TriangleCommand(xjm); // 画三角形1
-	Command* circle_cmd_2 = new CircleCommand(xjm);     // 画圆2
+	Command* circle_cmd_1 = new CircleCommand(xjm);     // 开启链板输送机1
+	Command* line_cmd_1 = new LineCommand(xjm);         // 开启滚筒筛分机1
+	Command* triangle_cmd_1 = new TriangleCommand(xjm); // 开启风选机设备1
+	Command* circle_cmd_2 = new CircleCommand(xjm);     // 开启链板输送机2
 
 	ProcessCommand* cch = new ProcessCommand(); // 命令处理对象（负责把接收的命令进行过滤并分发给命令执行者）
 
@@ -29,10 +29,10 @@ void CommandPatternDemo()
 	cch->setCommand(triangle_cmd_1);
 	cch->setCommand(circle_cmd_2);
 
-	cch->Notify(); // 将命令通知给画家
+	cch->Notify(); // 将命令通知给控制台
 
-	cch->Revoke(); // 擦除圆2
-	cch->Revoke(); // 擦除直线
+	cch->Revoke(); // 关闭链板输送机2
+	cch->Revoke(); // 关闭滚筒筛分机
 
 	cout << endl;
 }

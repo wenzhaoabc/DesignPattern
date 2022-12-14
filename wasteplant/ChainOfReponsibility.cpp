@@ -15,11 +15,18 @@ void ChainOfReponsibilityPatternDemo()
     director->SetNextHandler(manager);
     manager->SetNextHandler(boss);
 
-
-    director->HandleRequest(1);
+    cout << "Çë¼Ù2Ìì£º" << endl;
     director->HandleRequest(2);
+    cout << endl;
+    cout << "Çë¼Ù5Ìì£º" << endl;
     director->HandleRequest(5);
-    director->HandleRequest(8);
+    cout << endl;
+    cout << "Çë¼Ù15Ìì£º" << endl;
+    director->HandleRequest(15);
+    cout << endl;
+    cout << "Çë¼Ù20Ìì£º" << endl;
+    director->HandleRequest(20);
+    cout << endl;
    
 	cout << endl;
 }

@@ -6,7 +6,7 @@ class HomeView {
 public:
     void show()
     {
-        cout << "Displaying Home Page" << endl;
+        cout << "显示监督员工作手册" << endl;
     }
 };
 
@@ -15,7 +15,7 @@ class StudentView
 public:
     void show()
     {
-        cout << "Displaying Student Page" << endl;
+        cout << "显示工人工作手册" << endl;
     }
 };
 class Dispatcher
@@ -29,7 +29,7 @@ public:
 
     void dispatch(string request)
     {
-        if ("STUDENT" == request)
+        if ("工人" == request)
         {
             studentView->show();
         }
@@ -67,13 +67,13 @@ private:
 
     bool isAuthenticUser()
     {
-        cout << "User is authenticated successfully." << endl;
+        cout << "身份认证成功" << endl;
         return true;
     }
 
     void trackRequest(string request)
     {
-        cout << "Page requested: " + request << endl;
+        cout << "需要显示的工作手册: " + request << endl;
     }
 };
 

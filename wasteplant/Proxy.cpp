@@ -10,12 +10,12 @@ void ProxyPatternDemo()
     cout << "代理模式展示：" << endl;
     cout << endl;
     //小明
-    Person* xiaoM = new XiaoM;
+    Client* factory = new FactoryClient;
 
     //找一个中介帮忙租房子
-    Person* intermediary = new Intermediary(xiaoM);
+    Client* intermediary = new Intermediary(factory);
 
-    intermediary->rentHouse();
+    intermediary->disposeGarbage();
     cout << endl;
 
 }

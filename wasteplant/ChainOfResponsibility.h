@@ -26,12 +26,13 @@ public:
     //处理请求
     virtual void HandleRequest(int days)
     {
-        if (days <= 1)
+        if (days <= 3)
         {
-            cout << "我是主管，有权批准一天假，同意了！" << endl;
+            cout << "组长：请假" << days << "天,不超过三天，批准" << endl;
         }
         else
         {
+            cout << "组长：请假时间超过3天，转交部门长" << endl;
             m_pNextHandler->HandleRequest(days);
         }
     }
@@ -44,12 +45,13 @@ public:
     //处理请求
     virtual void HandleRequest(int days)
     {
-        if (days <= 3)
+        if (days <= 7)
         {
-            cout << "我是经理，有权批准三以下的假，同意了！" << endl;
+            cout << "部门长：请假"<<days<<"天,不超过7天，批准" << endl;
         }
         else
         {
+            cout << "部门长：请假时间超过7天，转交经理" << endl;
             m_pNextHandler->HandleRequest(days);
         }
     }
@@ -62,13 +64,13 @@ public:
     //处理请求
     virtual void HandleRequest(int days)
     {
-        if (days <= 7)
+        if (days <= 15)
         {
-            cout << "我是老板，最多让你请7天假，同意了！" << endl;
+            cout << "经理：请假" << days << "天,不超过15天，批准" << endl;
         }
         else
         {
-            cout << "你请的假事假太长了，不同意！" << endl;
+            cout << "经理：请假时间过长，不予批准" << endl;
         }
     }
 };

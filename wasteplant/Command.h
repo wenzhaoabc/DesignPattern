@@ -13,46 +13,46 @@ public:
 	Painter() {}
 	~Painter() {}
 
-	// 绘制圆
+	// 开启链板输送机
 	void DrawCircle()
 	{
-		std::cout << "绘制 ——> 圆_" << ++mCircleCount << '\n' << '\n';
+		std::cout << "开启 ——> 链板输送机" << ++mCircleCount << '\n' << '\n';
 	}
 
-	// 擦除圆
+	// 关闭链板输送机
 	void EraseCircle()
 	{
-		std::cout << "擦除 ——> 圆_" << mCircleCount-- << '\n' << '\n';
+		std::cout << "关闭 ——> 链板输送机" << mCircleCount-- << '\n' << '\n';
 	}
 
 	void DrawRectangle()
 	{
-		std::cout << "绘制 ——> 矩形_" << ++mRectangleCount << '\n' << '\n';
+		std::cout << "开启 ——> 振动筛分机" << ++mRectangleCount << '\n' << '\n';
 	}
 
 	void EraseRectangle()
 	{
-		std::cout << "擦除 ——> 矩形_" << mRectangleCount-- << '\n' << '\n';
+		std::cout << "关闭 ——> 振动筛分机" << mRectangleCount-- << '\n' << '\n';
 	}
 
 	void DrawLine()
 	{
-		std::cout << "绘制 ——> 直线_" << ++mLineCount << '\n' << '\n';
+		std::cout << "开启 ——> 滚筒筛分机" << ++mLineCount << '\n' << '\n';
 	}
 
 	void EraseLine()
 	{
-		std::cout << "擦除 ——> 直线_" << mLineCount-- << '\n' << '\n';
+		std::cout << "关闭 ——> 滚筒筛分机" << mLineCount-- << '\n' << '\n';
 	}
 
 	void DrawTriangle()
 	{
-		std::cout << "绘制 ——> 三角形_" << ++mTriangleCount << '\n' << '\n';
+		std::cout << "开启 ——> 风选机设备" << ++mTriangleCount << '\n' << '\n';
 	}
 
 	void EraseTriangle()
 	{
-		std::cout << "擦除 ——> 三角形_" << mTriangleCount-- << '\n' << '\n';
+		std::cout << "关闭 ——> 风选机设备" << mTriangleCount-- << '\n' << '\n';
 	}
 
 private:
@@ -81,7 +81,7 @@ protected:
 };
 
 
-// 圆命令类（在执行命令的同时，画家对象也会执行具体的操作）
+// 链板输送机命令类（在执行命令的同时，控制台对象也会执行具体的操作）
 class CircleCommand :public Command
 {
 public:
@@ -91,13 +91,13 @@ public:
 
 	~CircleCommand() {}
 
-	// 重写ExecuteCommand()，画家执行绘制圆命令
+	// 重写ExecuteCommand()，控制台执行开启链板输送机命令
 	virtual void ExecuteCommand()
 	{
 		mPainter->DrawCircle();
 	}
 
-	// 重写RevokeCommand()，画家执行擦除圆命令
+	// 重写RevokeCommand()，控制台执行关闭链板输送机命令
 	virtual void RevokeCommand()
 	{
 		mPainter->EraseCircle();
