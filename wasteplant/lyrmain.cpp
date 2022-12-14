@@ -1,10 +1,19 @@
 #include<iostream>
 #include "factory.h"
+#include"Proxy.h"
+#include"FrontController.h"
+#include"Command.h"
+#include"ChainOfResponsibility.h"
 
 using namespace std;
 int main() {
-	Factory f;
-	f.test();
-	cout << "lyrtest" << endl;
+	ProxyPatternDemo();
+	
+	CommandPatternDemo();
+
+	ChainOfReponsibilityPatternDemo();
+
+	FrontControllerPatternDemo();
+
 	return 0;
 }

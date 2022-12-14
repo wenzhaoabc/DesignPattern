@@ -127,14 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ChainOfReponsibility.cpp" />
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="factory.cpp" />
+    <ClCompile Include="FrontController.cpp" />
     <ClCompile Include="lyrmain.cpp" />
+    <ClCompile Include="Proxy.cpp" />
     <ClCompile Include="zstmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChainOfResponsibility.h" />
+    <ClInclude Include="Command.h" />
     <ClInclude Include="factory.h" />
+    <ClInclude Include="FrontController.h" />
     <ClInclude Include="Garbage.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="Proxy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

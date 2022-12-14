@@ -42,6 +42,18 @@
     <ClCompile Include="lyrmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <Filter>lyr\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="FrontController.cpp">
+      <Filter>lyr\FrontControllr</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>lyr\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainOfReponsibility.cpp">
+      <Filter>lyr\ChainOfResponsibility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="factory.h">
@@ -52,6 +64,18 @@
     </ClInclude>
     <ClInclude Include="Garbage.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy.h">
+      <Filter>lyr\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="FrontController.h">
+      <Filter>lyr\FrontControllr</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>lyr\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainOfResponsibility.h">
+      <Filter>lyr\ChainOfResponsibility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
