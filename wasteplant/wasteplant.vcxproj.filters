@@ -21,7 +21,16 @@
     <ClCompile Include="factory.cpp">
       <Filter>zst</Filter>
     </ClCompile>
-    <ClCompile Include="zstmain.cpp">
+    <ClCompile Include="Decoration.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ymymain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Flyweight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DAO.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,5 +44,22 @@
     <ClInclude Include="Garbage.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Decoration.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ymyHeader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Flyweight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DAO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Piece.h">
+      <Filter>头文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

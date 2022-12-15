@@ -127,13 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DAO.cpp" />
+    <ClCompile Include="Decoration.cpp" />
     <ClCompile Include="factory.cpp" />
-    <ClCompile Include="zstmain.cpp" />
+    <ClCompile Include="Flyweight.cpp" />
+    <ClCompile Include="ymymain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Decoration.h" />
     <ClInclude Include="factory.h" />
+    <ClInclude Include="Flyweight.h" />
     <ClInclude Include="Garbage.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="DAO.h" />
+    <ClInclude Include="ymyHeader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Piece.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
