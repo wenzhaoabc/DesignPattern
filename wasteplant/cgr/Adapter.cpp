@@ -3,7 +3,7 @@
 using namespace std;
 
 // Ä¿±ê: À¬»øÍ°
-class Motor {
+class GarbageBin {
 public:
     virtual void use() = 0;
 };
@@ -41,89 +41,89 @@ public:
 };
 
 // ¸ÉÀ¬»øÍ°ÊÊÅäÆ÷
-class DryGarbageBinAdapter : public Motor {
+class DryGarbageBinAdapter : public GarbageBin {
 public:
     DryGarbageBinAdapter() {
-        emotor = new DryGarbageBin();
+        oGarbageBin = new DryGarbageBin();
     }
     ~DryGarbageBinAdapter() {
-        delete emotor;
+        delete oGarbageBin;
     }
 
     void use() override {
-        emotor->UseDryGarbageBin();
+        oGarbageBin->UseDryGarbageBin();
     }
 
 private:
-    DryGarbageBin* emotor;
+    DryGarbageBin* oGarbageBin;
 };
 
 // ÊªÀ¬»øÍ°ÊÊÅäÆ÷
-class WetGarbageBinAdapter : public Motor {
+class WetGarbageBinAdapter : public GarbageBin {
 public:
     WetGarbageBinAdapter() {
-        omotor = new WetGarbageBin();
+        oGarbageBin = new WetGarbageBin();
     }
     ~WetGarbageBinAdapter() {
-        delete omotor;
+        delete oGarbageBin;
     }
 
     void use() override {
-        omotor->UseWetGarbageBin();
+        oGarbageBin->UseWetGarbageBin();
     }
 
 private:
-    WetGarbageBin* omotor;
+    WetGarbageBin* oGarbageBin;
 };
 
 // ¿É»ØÊÕÀ¬»øÍ°ÊÊÅäÆ÷
-class RecoverableGarbageBinAdapter : public Motor {
+class RecoverableGarbageBinAdapter : public GarbageBin {
 public:
     RecoverableGarbageBinAdapter() {
-        omotor = new RecoverableGarbageBin();
+        oGarbageBin = new RecoverableGarbageBin();
     }
     ~RecoverableGarbageBinAdapter() {
-        delete omotor;
+        delete oGarbageBin;
     }
 
     void use() override {
-        omotor->UseRecoverableGarbageBin();
+        oGarbageBin->UseRecoverableGarbageBin();
     }
 
 private:
-    RecoverableGarbageBin* omotor;
+    RecoverableGarbageBin* oGarbageBin;
 };
 
 // ÓĞº¦À¬»øÍ°ÊÊÅäÆ÷
-class HarmfulGarbageBinAdapter : public Motor {
+class HarmfulGarbageBinAdapter : public GarbageBin {
 public:
     HarmfulGarbageBinAdapter() {
-        omotor = new HarmfulGarbageBin();
+        oGarbageBin = new HarmfulGarbageBin();
     }
     ~HarmfulGarbageBinAdapter() {
-        delete omotor;
+        delete oGarbageBin;
     }
 
     void use() override {
-        omotor->UseHarmfulGarbageBin();
+        oGarbageBin->UseHarmfulGarbageBin();
     }
 
 private:
-    HarmfulGarbageBin* omotor;
+    HarmfulGarbageBin* oGarbageBin;
 };
 
 int Adapterfunction() {
     //Ê¹ÓÃ¸ÉÀ¬»øÍ°
-    Motor* motor1 = new DryGarbageBinAdapter();
-    motor1->use();
+    GarbageBin* GarbageBin1 = new DryGarbageBinAdapter();
+    GarbageBin1->use();
     //Ê¹ÓÃÊªÀ¬»øÍ°
-    Motor* motor2 = new WetGarbageBinAdapter();
-    motor2->use();
+    GarbageBin* GarbageBin2 = new WetGarbageBinAdapter();
+    GarbageBin2->use();
     //Ê¹ÓÃ¿É»ØÊÕÀ¬»øÍ°
-    Motor* motor3 = new RecoverableGarbageBinAdapter();
-    motor3->use();
+    GarbageBin* GarbageBin3 = new RecoverableGarbageBinAdapter();
+    GarbageBin3->use();
     //Ê¹ÓÃÓĞº¦À¬»øÍ°
-    Motor* motor4 = new HarmfulGarbageBinAdapter();
-    motor4->use();
+    GarbageBin* GarbageBin4 = new HarmfulGarbageBinAdapter();
+    GarbageBin4->use();
     return 0;
 }

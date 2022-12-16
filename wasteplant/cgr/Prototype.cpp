@@ -17,7 +17,7 @@ public:
 class cperson : CPrototype
 {
 public:
-    cperson() :mID("0000"),mName("李华")
+    cperson() :mID("0000"), mName("李华")
     {
 
     }
@@ -50,7 +50,7 @@ static void change_information(cperson* p_person)
 static void show_params(cperson* p_person)
 {
     cout << "Name: " << p_person->GetName() << endl;
-    cout << "ID: " << p_person->GetID() << endl<< endl; 
+    cout << "ID: " << p_person->GetID() << endl << endl;
 }
 
 int Prototype()

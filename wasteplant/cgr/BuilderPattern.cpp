@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
 
-typedef enum MANTYPETag
+typedef enum GarbageBinTYPETag
 {
     kDryGarbageBin,
     kWetGarbageBin,
     kRecoverableGarbageBin,
     kHarmfulGarbageBin
-}MANTYPE;
+}GarbageBinTYPE;
 
 //GarbageBin
 class GarbageBin
 {
 public:
-    void SettheGarbageCanLid(MANTYPE type) { m_Type = type; }//建造垃圾桶盖
-    void SettheGarbageCan(MANTYPE type) { m_Type = type; }//建造垃圾桶身
+    void SettheGarbageCanLid(GarbageBinTYPE type) { m_Type = type; }//建造垃圾桶盖
+    void SettheGarbageCan(GarbageBinTYPE type) { m_Type = type; }//建造垃圾桶身
     void ShowGarbageBin()
     {
         switch (m_Type)
@@ -37,7 +37,7 @@ public:
     }
 
 private:
-    MANTYPE m_Type;
+    GarbageBinTYPE m_Type;
 };
 
 // Builder
@@ -127,52 +127,52 @@ int BuilderPattern()
     Builder* builderObj1 = new DryGarbageBinBuilder();
     Director directorObj1(builderObj1);
     directorObj1.CreateGarbageBin();
-    GarbageBin* manObj1 = builderObj1->GetGarbageBin();
-    if (manObj1 == NULL)
+    GarbageBin* GarbageBinObj1 = builderObj1->GetGarbageBin();
+    if (GarbageBinObj1 == NULL)
         return 0;
-    manObj1->ShowGarbageBin();
+    GarbageBinObj1->ShowGarbageBin();
     //建造完毕
-    delete manObj1;
-    manObj1 = NULL;
+    delete GarbageBinObj1;
+    GarbageBinObj1 = NULL;
     delete builderObj1;
     builderObj1 = NULL;
     //建造湿垃圾桶
     Builder* builderObj2 = new WetGarbageBinBuilder();
     Director directorObj2(builderObj2);
     directorObj2.CreateGarbageBin();
-    GarbageBin* manObj2 = builderObj2->GetGarbageBin();
-    if (manObj2 == NULL)
+    GarbageBin* GarbageBinObj2 = builderObj2->GetGarbageBin();
+    if (GarbageBinObj2 == NULL)
         return 0;
-    manObj2->ShowGarbageBin();
+    GarbageBinObj2->ShowGarbageBin();
     //建造完毕
-    delete manObj2;
-    manObj2 = NULL;
+    delete GarbageBinObj2;
+    GarbageBinObj2 = NULL;
     delete builderObj2;
     builderObj2 = NULL;
     //建造可回收垃圾桶
     Builder* builderObj3 = new RecoverableGarbageBinBuilder();
     Director directorObj3(builderObj3);
     directorObj3.CreateGarbageBin();
-    GarbageBin* manObj3 = builderObj3->GetGarbageBin();
-    if (manObj3 == NULL)
+    GarbageBin* GarbageBinObj3 = builderObj3->GetGarbageBin();
+    if (GarbageBinObj3 == NULL)
         return 0;
-    manObj3->ShowGarbageBin();
+    GarbageBinObj3->ShowGarbageBin();
     //建造完毕
-    delete manObj3;
-    manObj3 = NULL;
+    delete GarbageBinObj3;
+    GarbageBinObj3 = NULL;
     delete builderObj3;
     builderObj3 = NULL;
     //建造有害垃圾桶
     Builder* builderObj4 = new HarmfulGarbageBinBuilder();
     Director directorObj4(builderObj4);
     directorObj4.CreateGarbageBin();
-    GarbageBin* manObj4 = builderObj4->GetGarbageBin();
-    if (manObj4 == NULL)
+    GarbageBin* GarbageBinObj4 = builderObj4->GetGarbageBin();
+    if (GarbageBinObj4 == NULL)
         return 0;
-    manObj4->ShowGarbageBin();
+    GarbageBinObj4->ShowGarbageBin();
     //建造完毕
-    delete manObj4;
-    manObj4 = NULL;
+    delete GarbageBinObj4;
+    GarbageBinObj4 = NULL;
     delete builderObj4;
     builderObj4 = NULL;
 
