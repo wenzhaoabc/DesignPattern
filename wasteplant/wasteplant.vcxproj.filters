@@ -28,6 +28,18 @@
     <Filter Include="TransferObjectPattern">
       <UniqueIdentifier>{444a5b86-8362-48c9-aa08-3ed54b83dd48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ObserverPattern">
+      <UniqueIdentifier>{3a57c2e7-71c9-4ab5-9d42-330645cc3bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StatePattern">
+      <UniqueIdentifier>{b6fc00b8-62b7-4b23-a969-6e866959eea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MementoPattern">
+      <UniqueIdentifier>{f5ba8bc9-729f-4e28-b02e-78b4a5e89f60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisitorPattern">
+      <UniqueIdentifier>{93106aa0-0aa1-440a-adf7-0227e005345d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="zstmain.cpp">
@@ -44,6 +56,24 @@
     </ClCompile>
     <ClCompile Include="TransferObjectPattern.cpp">
       <Filter>TransferObjectPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="factory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Visitor.cpp">
+      <Filter>VisitorPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="WasteScreening.cpp">
+      <Filter>VisitorPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="Stuff.cpp">
+      <Filter>StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="StuffState.cpp">
+      <Filter>StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkingSchedule.cpp">
+      <Filter>ObserverPattern</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +94,27 @@
     </ClInclude>
     <ClInclude Include="TransferObjectPattern.h">
       <Filter>TransferObjectPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GarbageType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Visitor.h">
+      <Filter>VisitorPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="WasteScreening.h">
+      <Filter>VisitorPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Stuff.h">
+      <Filter>StatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="StuffState.h">
+      <Filter>StatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkingSchedule.h">
+      <Filter>ObserverPattern</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

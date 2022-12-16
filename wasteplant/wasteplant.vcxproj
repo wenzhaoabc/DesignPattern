@@ -133,8 +133,13 @@
     <ClCompile Include="EmptyObjectPattern.cpp" />
     <ClCompile Include="factory.cpp" />
     <ClCompile Include="StrategicPattern.cpp" />
+    <ClCompile Include="Stuff.cpp" />
+    <ClCompile Include="StuffState.cpp" />
     <ClCompile Include="TemplatePattern.cpp" />
     <ClCompile Include="TransferObjectPattern.cpp" />
+    <ClCompile Include="Visitor.cpp" />
+    <ClCompile Include="WasteScreening.cpp" />
+    <ClCompile Include="WorkingSchedule.cpp" />
     <ClCompile Include="zstmain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -144,8 +149,13 @@
     <ClInclude Include="GarbageType.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="StrategicPattern.h" />
+    <ClInclude Include="Stuff.h" />
+    <ClInclude Include="StuffState.h" />
     <ClInclude Include="TemplatePattern.h" />
     <ClInclude Include="TransferObjectPattern.h" />
+    <ClInclude Include="Visitor.h" />
+    <ClInclude Include="WasteScreening.h" />
+    <ClInclude Include="WorkingSchedule.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
