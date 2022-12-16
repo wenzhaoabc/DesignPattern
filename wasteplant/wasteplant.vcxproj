@@ -130,8 +130,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ChoiceManager.cpp" />
+    <ClCompile Include="ChoiceTrash.cpp" />
     <ClCompile Include="EmptyObjectPattern.cpp" />
     <ClCompile Include="factory.cpp" />
+    <ClCompile Include="MyChoice.cpp" />
     <ClCompile Include="StrategicPattern.cpp" />
     <ClCompile Include="Stuff.cpp" />
     <ClCompile Include="StuffState.cpp" />
@@ -143,10 +146,14 @@
     <ClCompile Include="zstmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChoiceManager.h" />
+    <ClInclude Include="ChoiceTrash.h" />
     <ClInclude Include="EmptyObjectPattern.h" />
     <ClInclude Include="factory.h" />
     <ClInclude Include="Garbage.h" />
     <ClInclude Include="GarbageType.h" />
+    <ClInclude Include="lmq.h" />
+    <ClInclude Include="MyChoice.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="StrategicPattern.h" />
     <ClInclude Include="Stuff.h" />

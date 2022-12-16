@@ -75,6 +75,15 @@
     <ClCompile Include="WorkingSchedule.cpp">
       <Filter>ObserverPattern</Filter>
     </ClCompile>
+    <ClCompile Include="ChoiceManager.cpp">
+      <Filter>MementoPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="ChoiceTrash.cpp">
+      <Filter>MementoPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="MyChoice.cpp">
+      <Filter>MementoPattern</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person.h">
@@ -115,6 +124,18 @@
     </ClInclude>
     <ClInclude Include="WorkingSchedule.h">
       <Filter>ObserverPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="ChoiceManager.h">
+      <Filter>MementoPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="ChoiceTrash.h">
+      <Filter>MementoPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="MyChoice.h">
+      <Filter>MementoPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="lmq.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
