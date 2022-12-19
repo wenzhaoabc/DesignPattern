@@ -267,6 +267,10 @@ void DAO()
             cout << "输入指令有误，请重新输入！" << endl;
             break;
         }
+        if(num==8)
+        {
+            break;
+        }
     }
 }
 
