@@ -1,0 +1,25 @@
+//
+// Created by zst on 2022/12/10.
+//
+
+#ifndef DESIGNP_GARBAGETYPE_H
+#define DESIGNP_GARBAGETYPE_H
+enum GARBAGE_TYPE {
+    /**
+     * ¸ÉÀ¬»ø
+     */
+    Dry,
+    /**
+     * ÊªÀ¬»ø
+     */
+    Wet,
+    /**
+     * ¿É»ØÊÕÀ¬»ø
+     */
+    Recoverable,
+    /**
+     * ÓÐº¦À¬»ø
+     */
+    Harmful,
+};
+#endif //DESIGNP_GARBAGETYPE_H
